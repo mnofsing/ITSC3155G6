@@ -1,83 +1,32 @@
 <html>
 
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
-	<style>
-		.footer {
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			background-color: midnightblue;
-			color: white;
-			text-align: center;
-			font-family: "Times New Roman";
-		}
-
-		.header {
-			position: fixed;
-			left: 0;
-			top: 0;
-			width: 100%;
-			background-color: midnightblue;
-			color: white;
-			text-align: center;
-			font-family: "Times New Roman";
-			font-style: bold;
-		}
-
-		.body {
-			position: relative;
-			width: 100%;
-			top: 200;
-			text-align: center;
-			font-family: "Times New Roman";
-		}
-
-		a.social {
-			display: inline-block;
-			padding: 0.35em 1.2em;
-			border: 0.1px solid #FFFFFF margin:0 0.3em 0;
-			border-radius: 0.12em box-sizing: border-box;
-			text-decoration: none;
-			font-family: "Times New Roman";
-			font-weight: 300;
-			color: #FFFFFF text-align:center;
-			transition: all 0.2s;
-		}
-
-		a.social: hover {
-			color: #000000;
-			background-color: #FFFFFF
-		}
-
-		@media all and (max-width: 30em) {
-			a.social {
-				display: block;
-				margin: 0.4em auto;
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>TheDashBros</title>
+	<script src="login.js"> </script>
 </head>
 <br>
 <h1>
-	<p align="center"><font size = "3">Please login here.</font><br /></p>
+	<p align="center">
+		<font size="3">Please login here.</font><br />
+	</p>
 </h1>
 
 <body class="body">
-	<div align="center" class="sign-in-container">
-		<div>
-			<label>Username:</label><input type="text" />
+	<form id="loginForm">
+		<div align="center" class="sign-in-container">
+			<div class="userName">
+				<label class="labelUser">Username:</label><input  id="userName" type="text" />
+			</div>
+			<div class="password">
+				<label class="labelPass">Password: </label><input id="password" type="text" />
+			</div>
+			<div class="login"><button id="loginBtn" onclick="createSession(event)">LOGIN</button></div>
 		</div>
-		<div>
-			<label>Password: </label><input type="text" />
+		<div id="error" class="error hide">
+			Your username or password is incorrect!
 		</div>
-		<div><button onclick="window.location.href = 'https://www.google.com';">LOGIN</button></div>
-	</div>
-
-
-
+	</form>
 </body>
 <a href="something" class="social"></a>
 <div class="footer">
