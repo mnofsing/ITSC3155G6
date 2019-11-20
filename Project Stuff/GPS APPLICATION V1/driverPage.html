@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>TheDashBrosDriversPage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function driverDisplayInfo() {
+			var table = document.getElementById("driverInfoTable");
+			var row = table.insertRow(1);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			cell1.innerHTML = "Cargo";
+			cell2.innerHTML = "Destination";
+			
+			var x = "Example FirstName LastName";
+			document.getElementById("driverName").innerHTML = x;
+		}
+	</script>
+	
+</head>
+
+<body class="body" onload="driverDisplayInfo();">
+	<font face="arial">Driver Information</font>
+	<br>
+	<br>
+	<font face="arial" id="driverName" ></font>
+	<br>
+	<br>
+		<table a class="steelBlueCols" id="driverInfoTable" align="center">
+			<tr>
+				<th>Destination</th>
+				<th>Cargo</th>
+			</tr>
+		</table>
+</body>
+
+<div class="footer">
+	<p>Copyright &copy TheDashBros 2019</p>
+</div>
+<div class="header">
+	<p>Welcome to TheDashBros navigation system!</p>
+</html>
