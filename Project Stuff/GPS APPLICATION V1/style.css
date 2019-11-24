@@ -3,6 +3,7 @@
 			left: 0;
 			bottom: 0;
 			width: 100%;
+			height: 750px0px;
 			background-color: midnightblue;
 			color: white;
 			text-align: center;
@@ -15,18 +16,24 @@
 			top: 0;
 			width: 100%;
 			background-color: midnightblue;
+			padding-left: 7pt;
 			color: white;
-			text-align: center;
+			text-align: left;
+			size: 8px;
 			font-family: "Arial";
-			font-style: bold;
 		}
 
 		.body {
 			position: relative;
 			width: 100%;
 			top: 200;
+			background-color: white;
 			text-align: center;
 			font-family: "Arial";
+			background-image: url("1.jpg"), url("2.jpg");
+			background-position: left center, right top;
+   			background-repeat: no-repeat, no-repeat;
+			background-size: 290px 229px, 409px 302px;
 		}
 
 		a.social {
@@ -55,9 +62,12 @@
         
         .sign-in-container {
             box-shadow: 
-            inset 0 -3em 3em rgba(0,0,0,0.1), 
+            inset 
              0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+			 0.3em 0.3em 1em rgba(0,0,0,0.3);
+			 border-radius: 20px;
+			 background-color: white;
+			 padding: 10px;
              width:500px;
              margin-left: auto;
              margin-right: auto;

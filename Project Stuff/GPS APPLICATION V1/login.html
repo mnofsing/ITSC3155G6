@@ -1,30 +1,32 @@
 <html>
 
-
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>TheDashBros</title>
+	<title>DriveTime</title>
 	<script src="login.js"> </script>
 </head>
-<br>
-<h1>
-	<p align="center">
-		<font size="3">Please login here.</font><br />
-	</p>
-</h1>
+
+<p>Welcome to DriveTime!</p>
 
 <body class="body">
 	<form id="loginForm">
 		<div align="center" class="sign-in-container">
+			<h1>
+				<p align="center">
+					<font size="3">Please login here.</font><br />
+				</p>
+			</h1>
 			<div class="userName">
-				<label class="labelUser">Username:</label><input  id="userName" type="text" />
+				<label class="labelUser">Username:</label><input id="userName" type="text" />
 			</div>
 			<div class="password">
 				<label class="labelPass">Password: </label><input id="password" type="text" />
 			</div>
 			<div class="user"><label><input type="radio" name="option" value="Option 1">Driver</label>
 				<label><input type="radio" name="option" value="Option 2">Managment</label></div>
-			<div class="login"><a class="DashBrosButton" id="loginBtn" onclick="createSession(event)">LOGIN</a class="DashBrosButton"></div>
+			<div class="login"><a class="DashBrosButton" id="loginBtn" onclick="createSession(event)">LOGIN</a
+					class="DashBrosButton"></div>
+			<br />
 		</div>
 		<div id="error" class="error hide">
 			Your username or password is incorrect!
@@ -33,8 +35,12 @@
 </body>
 <a href="something" class="social"></a>
 <div class="footer">
-	<p>Copyright &copy TheDashBros 2019</p>
+	<p>Copyright &copy DriveTime 2019</p>
 </div>
 <div class="header">
-	<p>Welcome to TheDashBros navigation system!</p>
+	<p>
+		<font size=6px font-style=bold;> DriveTime </font></br>
+		<font size=2px font-style=underline;>Simple. Safe. Secure.</font>
+	</p>
+
 </html>
