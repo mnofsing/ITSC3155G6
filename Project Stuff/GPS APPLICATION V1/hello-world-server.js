@@ -14,12 +14,20 @@ app.use(express.static(path.join(__dirname, '/CSS')));
 app.get('/MainPage', function (req, res) {
     res.sendfile('\MainPage.html');
 });
+
 app.get('/driverPage', function (req, res) {
     res.sendfile('\driverPage.html');
 });
+
 app.get('/managerPage', function (req, res) {
     res.sendfile('\managerPage.html');
 });
+
+app.get('/page1', function (req, res) {
+    res.sendfile('\page1.html');
+});
+
+
 
 // Change the 404 message modifing the middleware
 app.use(function(req, res, next) {
