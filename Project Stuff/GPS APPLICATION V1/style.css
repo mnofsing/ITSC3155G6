@@ -1,0 +1,191 @@
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 750px0px;
+			background-color: midnightblue;
+			color: white;
+			text-align: center;
+			font-family: "Arial";
+		}
+
+		.header {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			background-color: midnightblue;
+			padding-left: 7pt;
+			color: white;
+			text-align: left;
+		}
+
+		.body {
+			position: absolute;
+			width: 100%;
+			top: 200;
+			background-color: white;
+			text-align: center;
+			font-family: "Arial";
+			background-image: url("1.jpg"), url("2.jpg");
+			background-position: left center, right top;
+   			background-repeat: no-repeat, no-repeat;
+			background-size: 290px 229px, 409px 302px;
+		}
+
+		a.social {
+			display: inline-block;
+			padding: 0.35em 1.2em;
+			border: 0.1px solid #FFFFFF margin:0 0.3em 0;
+			border-radius: 0.12em box-sizing: border-box;
+			text-decoration: none;
+			font-family: "Arial";
+			font-weight: 300;
+			color: #FFFFFF text-align:center;
+			transition: all 0.2s;
+		}
+
+		a.social: hover {
+			color: #000000;
+			background-color: #FFFFFF
+		}
+
+		@media all and (max-width: 30em) {
+			a.social {
+				display: block;
+				margin: 0.4em auto;
+			}
+        }
+        
+        .sign-in-container {
+            box-shadow: 
+            inset 
+             0 0  0 2px rgb(255,255,255),
+			 0.3em 0.3em 1em rgba(0,0,0,0.3);
+			 border-radius: 20px;
+			 background-color: white;
+			 padding: 10px;
+             width:500px;
+             margin-left: auto;
+             margin-right: auto;
+        }
+
+        .userName {
+            padding: 10px;
+        }
+
+        .password {
+            padding: 10px;
+        }
+
+        .login {
+            padding: 10px;
+        }
+
+        .labelUser {
+            margin-right: 5px;;
+        }
+
+        .error {
+            color: red;
+            padding: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+		
+		.DashBrosButton {
+			box-shadow:inset 0px 21px 0px -24px #191970;
+			background:linear-gradient(to bottom, #191970 5%, #2d2de3 100%);
+			background-color:#191970;
+			border-radius:21px;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			font-size:15px;
+			padding:6px 10px;
+			text-decoration:none;
+			text-shadow:0px 0px 0px #b23e35;
+		}
+		.DashBrosButton:hover {
+			background:linear-gradient(to bottom, #2d2de3 5%, #191970 100%);
+			background-color:#2d2de3;
+		}
+		.DashBrosButton:active {
+			position:relative;
+			top:1px;
+		}
+		.managerDriverSelectButton {
+			box-shadow: 0px 10px 14px -7px #3e7327;
+			background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+			background-color:#77b55a;
+			border-radius:4px;
+			border:1px solid #4b8f29;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			font-size:13px;
+			font-weight:bold;
+			padding:6px 12px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #5b8a3c;
+		}
+		.managerDriverSelectButton:hover {
+			background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+			background-color:#72b352;
+		}
+		.managerDriverSelectButton:active {
+			position:relative;
+			top:1px;
+		}table.steelBlueCols {
+			border: 4px solid #555555;
+			background-color: #555555;
+			width: 400px;
+			text-align: center;
+			border-collapse: collapse;
+		}
+		table.steelBlueCols td, table.steelBlueCols th {
+			border: 1px solid #555555;
+			padding: 5px 10px;
+		}
+		table.steelBlueCols tbody td {
+			font-size: 12px;
+			font-weight: bold;
+			color: #FFFFFF;
+		}
+		table.steelBlueCols tr:nth-child(even) {
+			background: #191970;
+		}
+		table.steelBlueCols thead {
+			background: #191970;
+			border-bottom: 10px solid #191970;
+		}
+		table.steelBlueCols thead th {
+			font-size: 15px;
+			font-weight: bold;
+			color: #FFFFFF;
+			text-align: left;
+			border-left: 2px solid #191970;
+		}
+		table.steelBlueCols thead th:first-child {
+			border-left: none;
+		}
+
+		table.steelBlueCols tfoot td {
+			font-size: 13px;
+		}
+		table.steelBlueCols tfoot .links {
+			text-align: right;
+		}
+		table.steelBlueCols tfoot .links a{
+			display: inline-block;
+			background: #FFFFFF;
+			color: #398AA4;
+			padding: 2px 8px;
+			border-radius: 5px;
+		}
+		
