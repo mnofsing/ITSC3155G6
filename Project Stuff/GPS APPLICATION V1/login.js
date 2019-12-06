@@ -14,7 +14,12 @@
             sessionStorage.setItem('loginTime', new Date().getTime());
             //set flag true to detect user entered id and password is correct
             detailCorrect = true;
-           window.location.href = 'MainPage.html';
+            if(document.getElementById('option2').checked){
+                window.location.href = 'managerPage.html';
+            }
+            else{
+                window.location.href = 'driverPage.html';
+            }
         } 
     }
 
@@ -23,7 +28,23 @@
     }
 }
 
+function kill_session() {
+    if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+    xmlhttp.open("GET","session_destroyer.php",false);
+    xmlhttp.send();
+
+    document.getElementById("id_of_a_hidden_div").innerHTML=xmlhttp.responseText; 
+}
+
 const data = {
-    'a1' : 'a1',
-    'b1' : 'b1'
+    'jsmith' : 'pass',
+    'pdickens' : 'pass'
 }
