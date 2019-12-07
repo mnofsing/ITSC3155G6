@@ -2,24 +2,28 @@
   * params null
   * returns void
   */
+ function createSession (e) {
+    e.preventDefault();
+    if(document.getElementById('option2').checked){
+        createManagerSession(e);
+    }
+    else{
+        createDriverSession(e);
+    }
+ }
 
- function createSession(e) {
+ function createDriverSession(e) {
     e.preventDefault();
     const userName = document.getElementById("userName").value;
     const password = document.getElementById("password").value;
     console.log(userName,password);
     let detailCorrect = false;
-    for (let [key, value] of Object.entries(data)) {
+    for (let [key, value] of Object.entries(drivers)) {
         if(userName === key && password === value){
             sessionStorage.setItem('loginTime', new Date().getTime());
             //set flag true to detect user entered id and password is correct
             detailCorrect = true;
-            if(document.getElementById('option2').checked){
-                window.location.href = 'managerPage.html';
-            }
-            else{
-                window.location.href = 'driverPage.html';
-            }
+            window.location.href = 'driverPage.html';
         } 
     }
 
@@ -28,23 +32,35 @@
     }
 }
 
-function kill_session() {
-    if (window.XMLHttpRequest)
-        {// code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlhttp=new XMLHttpRequest();
+function createManagerSession(e) {
+    e.preventDefault();
+    const userName = document.getElementById("userName").value;
+    const password = document.getElementById("password").value;
+    console.log(userName,password);
+    let detailCorrect = false;
+    for (let [key, value] of Object.entries(managers)) {
+        if(userName === key && password === value){
+            sessionStorage.setItem('loginTime', new Date().getTime());
+            //set flag true to detect user entered id and password is correct
+            detailCorrect = true;
+            window.location.href = 'managerPage.html';
+        } 
     }
-    else
-        {// code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-        }
 
-    xmlhttp.open("GET","session_destroyer.php",false);
-    xmlhttp.send();
-
-    document.getElementById("id_of_a_hidden_div").innerHTML=xmlhttp.responseText; 
+    if(!detailCorrect) {
+        document.getElementById('error').classList.remove('hide');
+    }
 }
 
-const data = {
+const drivers = {
     'jsmith' : 'pass',
-    'pdickens' : 'pass'
+    'pdickens' : 'pass',
+    'trocks' : 'pass',
+    'csimpson' : 'pass',
+    'oyang' : 'pass'
+}
+
+const managers = {
+    'kjordan' : 'pass',
+    'rmathews' : 'pass'
 }
