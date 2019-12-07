@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Displaying Text Directions With setPanel()</title>
+    <title>DriveTime Navigation</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -47,7 +47,7 @@
         font-size: 12px;
       }
       #right-panel {
-        height: 100%;
+        height: 50%;
         float: right;
         width: 390px;
         overflow: auto;
@@ -97,6 +97,7 @@
     </form>
     </div>
     <div id="right-panel"></div>
+    <div id="bottomRight-panel"></div>
     <div id="map"></div>
     <script>
       function initMap() {
@@ -121,7 +122,7 @@
         document.getElementById('to').addEventListener('change', onChangeHandler);
       }
 
-      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+      function calculateAndDisplayRoute(directionsService, directionsRenderer,from,to) {
         var start = document.getElementById('from').value;
         var end = document.getElementById('to').value;
         directionsService.route({
@@ -171,7 +172,7 @@
 
           $("#calculate-route").submit(function(event) {
             event.preventDefault();
-            calculateRoute($("#from").val(), $("#to").val());
+            calculateAndDisplayRoute(directionsService, directionsRenderer,$("#from").val(), $("#to").val())
             
           });
         });
