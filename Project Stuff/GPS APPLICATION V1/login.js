@@ -23,7 +23,7 @@
             sessionStorage.setItem('loginTime', new Date().getTime());
             //set flag true to detect user entered id and password is correct
             detailCorrect = true;
-            window.location.href = 'driverPage.html';
+            window.location.href = 'page1.html';
         } 
     }
 
@@ -54,10 +54,8 @@ function createManagerSession(e) {
 
 const drivers = {
     'jsmith' : 'pass',
-    'pdickens' : 'pass',
-    'trocks' : 'pass',
-    'csimpson' : 'pass',
-    'oyang' : 'pass'
+    'rsanchez' : 'pass',
+    'hdriveman' : 'pass',
 }
 
 const managers = {
