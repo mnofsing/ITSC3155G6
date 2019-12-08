@@ -1,113 +1,141 @@
 <html>
+
 <head>
-	<title>TheDashBrosManagerPage</title>
+	<title>Manager - DriveTime</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-	#D1 {
-        height: auto;
-        left: 48%;
-        width: 390px;
-        overflow: auto;
-		position: relative;
-		top: -50px;
-		padding: 10px;
-		border-radius: 10px;
-		box-shadow: 
-            inset 
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-             border-radius: 10px;
-             background-color: white;
-	  }
-	 #D2 {
-		height: 56%;
-        left: 280px;
-		width: 390px;
-		top: 400px;
-		position: fixed;
-		padding: 20px;
-		line-height: 2;
-        box-shadow: 
-            inset 
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-             border-radius: 10px;
-             background-color: white;
-             width:370px;
-             top: 155px;
-             margin-left: 10px;
-             margin-right: 10px;
-             margin-bottom: 4px;
-             margin-top: 4px;
-	  }
-     .DashBrosButton {
-			box-shadow:inset 0px 21px 0px -24px #191970;
-			background:linear-gradient(to bottom, #191970 5%, #2d2de3 100%);
-			background-color:#191970;
-			border-radius:21px;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			padding:6px 10px;
-			text-decoration:none;
-			text-shadow:0px 0px 0px #b23e35;
+		#D1 {
+			height: auto;
+			left: 48%;
+			width: 390px;
+			overflow: auto;
+			position: relative;
+			top: -70px;
+			padding: 10px;
+			line-height: 1.5;
+			border-radius: 10px;
+			box-shadow:
+				inset 0 0 0 2px rgb(255, 255, 255),
+				0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+			background-color: white;
 		}
+
+		#D2 {
+			height: 65%;
+			left: 280px;
+			width: 390px;
+			top: 700px;
+			position: fixed;
+			padding: 20px;
+			line-height: 2;
+			box-shadow:
+				inset 0 0 0 2px rgb(255, 255, 255),
+				0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+			background-color: white;
+			width: 370px;
+			top: 137px;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 4px;
+			margin-top: 4px;
+		}
+
+		.DashBrosButton {
+			box-shadow: inset 0px 21px 0px -24px #191970;
+			background: linear-gradient(to bottom, #191970 5%, #2d2de3 100%);
+			background-color: #191970;
+			border-radius: 21px;
+			display: inline-block;
+			cursor: pointer;
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 15px;
+			padding: 6px 10px;
+			text-decoration: none;
+			text-shadow: 0px 0px 0px #b23e35;
+		}
+
 		.DashBrosButton: hover {
-			background:linear-gradient(to bottom, #2d2de3 5%, #191970 100%);
-			background-color:#2d2de3;
+			background: linear-gradient(to bottom, #2d2de3 5%, #191970 100%);
+			background-color: #2d2de3;
 		}
+
 		.DashBrosButton:active {
-			position:relative;
-			top:1px;
+			position: relative;
+			top: 1px;
 		}
-      
-	
 	</style>
-	
+
 </head>
 
 <body class="body">
 	<div id=D1 align="left">
-		<font face="arial">DRIVER:		John Smith</font><br>
-		<font face="arial">FROM/TO:	UNC to UNCC</font><br>
-		<font face="arial">CARGO:		Textbooks</font><br>
-		<font face="arial">ETA:			20 Minutes </font><br>
-		<a class="DashBrosButton" onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=UNC+NC&destination=UNCC+NC&travelmode=driving';">DRIVER ROUTE</a class="DashBrosButton">
+		<font face="arial" style="font-weight: bold;">DRIVER: </font>
+		<font face="arial">John Smith</font><br>
+		<font face="arial" style="font-weight: bold;">FROM/TO: </font>
+		<font face="arial">UNC to UNCC</font><br>
+		<font face="arial" style="font-weight: bold;">CARGO: </font>
+		<font face="arial">Textbooks</font><br>
+		<font face="arial" style="font-weight: bold;">ETA: </font>
+		<font face="arial">20 Minutes </font><br>
+		<a class="DashBrosButton"
+			onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=UNC+NC&destination=UNCC+NC&travelmode=driving';">DRIVER
+			ROUTE</a class="DashBrosButton">
 	</div></br>
 	<div id=D1 align="left">
-		<font face="arial">DRIVER:		Rick Sanchez</font><br>
-		<font face="arial">FROM/TO:	Charlotte Douglas Airport to NC State University</font><br>
-		<font face="arial">CARGO:		Aerospace Metals</font><br>
-		<font face="arial">ETA:			1.2 hours </font><br>
-		<a class="DashBrosButton" onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=Charlotte+douglas+airport+NC&destination=NC+State+University+NC&travelmode=driving';">DRIVER ROUTE</a class="DashBrosButton">
+		<font face="arial" style="font-weight: bold;">DRIVER: </font>
+		<font face="arial">Rick Sanchez</font><br>
+		<font face="arial" style="font-weight: bold;">FROM/TO: </font>
+		<font face="arial">Charlotte Douglas Airport to NC State University</font><br>
+		<font face="arial" style="font-weight: bold;">CARGO: </font>
+		<font face="arial">Aerospace Metals</font><br>
+		<font face="arial" style="font-weight: bold;">ETA: </font>
+		<font face="arial">1.2 hours</font><br>
+		<a class="DashBrosButton"
+			onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=Charlotte+douglas+airport+NC&destination=NC+State+University+NC&travelmode=driving';">DRIVER
+			ROUTE</a class="DashBrosButton">
 	</div></br>
 	<div id=D1 align="left">
-		<font face="arial">DRIVER:		Hugh Driveman</font><br>
-		<font face="arial">FROM/TO:	Knight Theater NC to New York City</font><br>
-		<font face="arial">CARGO:		Costumes</font><br>
-		<font face="arial">ETA:			6.43 Hours </font><br>
-		<a class="DashBrosButton" onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=Knight+Theater+Charlotte+NC&destination=New+York+City+NY&travelmode=driving';">DRIVER ROUTE</a class="DashBrosButton">
-		
-	</div>	
+		<font face="arial" style="font-weight: bold;">DRIVER: </font>
+		<font face="arial">Hugh Driveman</font><br>
+		<font face="arial" style="font-weight: bold;">FROM/TO: </font>
+		<font face="arial">Knight Theater NC to New York City</font><br>
+		<font face="arial" style="font-weight: bold;">CARGO: </font>
+		<font face="arial">Costumes</font><br>
+		<font face="arial" style="font-weight: bold;">ETA: </font>
+		<font face="arial">6.43 hours</font><br>
+		<a class="DashBrosButton"
+			onclick="window.location.href = 'https://www.google.com/maps/dir/?api=1&origin=Knight+Theater+Charlotte+NC&destination=New+York+City+NY&travelmode=driving';">DRIVER
+			ROUTE</a class="DashBrosButton">
+
+	</div>
 	<div id=D2 align="left">
-		<h3><font face="arial" >Manager Information</font><br></h3>
-		<font face="arial">MANAGER: Ronald Mathews</font><br>
-		<font face="arial">COMPANY: International Postal Services</font><br>
-		<font face="arial">EMAIL: rmathews@ips.com</font><br>
-		<font face="arial">Contact: 555-555-5555</font><br>
+		<h3>
+			<font face="arial">Manager Information</font><br>
+		</h3>
+		<font face="arial" style="color: #191970;;">Ronald Mathews</font><br>
+		<font face="arial" style="font-weight: bold;">COMPANY: </font>
+		<font face="arial">International Postal Services</font><br>
+		<font face="arial" style="font-weight: bold;">EMAIL: </font>
+		<font face="arial">rmathews@ips.com</font><br>
+		<font face="arial" style="font-weight: bold;">CONTACT: </font>
+		<font face="arial">555-555-5555</font><br>
+		<a class="DashBrosButton" onclick="window.location.href = 'thankyouPage.html'" ;>Logout</a
+			class="DashBrosButton">
 	</div>
 </body>
 
- <div class="footer">
-		<p>Copyright &copy DriveTime 2019</p>
-	</div>
-	<div class="header">
-			<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-			<p>
-				<font style=font-family:'Pacifico'; size=6px font-style=bold;> DriveTime </font></br>
-				<font size=2px > Keeping Your Drive on Time.</font>
-			</p>
-	</div>
+<div class="footer">
+	<p>Copyright &copy DriveTime 2019</p>
+</div>
+<div class="header">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	<p>
+		<font style=font-family:'Pacifico'; size=6px font-style=bold;> DriveTime </font></br>
+		<font size=2px> Keeping Your Drive on Time.</font>
+	</p>
+</div>
+
 </html>
